@@ -1,6 +1,34 @@
 # Random-Quote-Machine
 This is a Freecodecamp intermediate front end development project.
 
+ 
+function newQuote() {
+  $.ajax({
+    url: "https://api.forismatic.com/api/1.0/?",
+    dataType: "jsonp",
+    data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
+    success: function( response ) {
+        $("#quoteText").html('"' + response.quoteText + '"');
+        if (response.quoteAuthor !== "") {
+        $("#quoteAuthor").html("- " + response.quoteAuthor);
+        }
+      else {
+        $("#quoteAuthor").html("- Unknown");
+      }
+        $(".twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + '"' + response.quoteText + '"  - '
+           + response.quoteAuthor + " %23Carlisle_Liu");
+    }   
+  });
+}
+ 
+
+$( document ).ready(function() {
+  newQuote();
+  $("#newQuote").click(function() {
+    newQuote();
+  });
+});
+
 
 body {
   background-image: url("http://www.myfreetextures.com/wp-content/uploads/2011/06/old-paper-floral-parchment-background-texture.jpg");
