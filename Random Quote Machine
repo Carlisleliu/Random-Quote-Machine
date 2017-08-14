@@ -1,6 +1,69 @@
 # Random-Quote-Machine
 This is a Freecodecamp intermediate front end development project.
 
+
+body {
+  background-image: url("http://www.myfreetextures.com/wp-content/uploads/2011/06/old-paper-floral-parchment-background-texture.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family:  "Apple Chancery",  cursive;
+  margin:  20px 0px;
+}
+
+#quotePanel {
+  word-wrap: balance;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#quoteText {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#quoteAuthor {
+  font-size: 18px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#newQuote {
+  background-color: #F5F5F5;
+  border: none;
+  color: #000000;
+  margin: auto 10px;
+}
+
+#tweet {
+  border: none;
+  margin: auto 10px;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-color: #000000;
+  height: 35px;
+  width: 100%;
+  font-weight: 300;
+}
+
+ul{
+  list-style-type: none;
+  display: block;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+
+
 <body>
 <div class = "container-fluid text-center">
 <h1>Random Quote Machine</h1>
