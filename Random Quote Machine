@@ -1,7 +1,7 @@
 # Random-Quote-Machine
 This is a Freecodecamp intermediate front end development project.
 
- 
+```
 function newQuote() {
   $.ajax({
     url: "https://api.forismatic.com/api/1.0/?",
@@ -119,3 +119,4 @@ ul{
   
 </div>
 </body>
+```
